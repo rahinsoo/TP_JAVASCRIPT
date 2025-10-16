@@ -14,11 +14,20 @@ let array3 = [];
 //boucle pour additionner les valeurs du tableau 1 et 2
 for (i = 0; i < array.length; i++) {
     // création d'une condition pour placer uniquement les nombres identique du tableau 1 et 2
-    for (x = 0; x < array.length; x++){
-        if (array[i] === array2[x]){
+    for (x = 0; x < array.length; x++) {
+        if (array[i] === array2[x]) {
             array3.push(array[i]);
         }
     }
 }
+
 // Affichage du tableau 3 comprenand les éléments en commun.
 console.log(array3);
+
+let somme = 0
+//boucle pour compter le nombre de colonnes dans le tableau 3
+for (z = 0; z < array3.length; z++) {
+    somme = z+1;
+}
+
+console.log("Il y a "+ somme + " en commun dans le tableau 1 et 2");
